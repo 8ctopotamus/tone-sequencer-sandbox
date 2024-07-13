@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #grid {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    #grid .row {
+      display: flex;
+      gap: 2px;
+    }
+    #grid button {
+      height: 50px;
+      width: 50px;
+    }
+    #grid button.active {
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div id="grid"></div>
+  <input id="bpm" type="range" min="50" max="200" value="120" />
+  <button id="play/stop">Play/Stop</button>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/15.1.2/Tone.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
