@@ -19,11 +19,11 @@ let rows = [
   Array.from({ length: 16 }, (_, i) => ({ note: scaleOfNotes[0], active: false  })),
 ]
 
-const drawActive = (beat) => {
-  rows.forEach((row, idx) => {
-    if 
-  })
-}
+// const drawActive = (beat) => {
+//   rows.forEach((row, idx) => {
+//     if 
+//   })
+// }
 
 Tone.Transport.scheduleRepeat(time => {
   rows.forEach((row, idx) => {
